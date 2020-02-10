@@ -1,0 +1,14 @@
+<head>
+    <title>Movie Express - Your Hub for Movie Info</title>
+    <link rel="stylesheet" href="views\app.css">
+</head>
+<%- include partials/searchForm.ejs %>
+<div class="movieList"></div>
+    <%var data=  data["Search"].forEach(function(movie) {%>
+    <div class="moveInfo"></div>
+        <h1><%= movie.Title %></h1>
+        <p>Year Released: <%= movie.Year %></p>
+        <img src= <%= movie["Poster"] %>>
+    </div>
+    <% }) %>
+</div>
