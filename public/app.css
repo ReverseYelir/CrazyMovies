@@ -3,6 +3,10 @@ input {
     width:80%;
     height:5%;
 }
+input[placeholder="Search a Movie Title"] {
+    text-align: center;
+    font-size: 2em;
+}
 body {
     background-color: #15202b;
     color: #ffffff;
